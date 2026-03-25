@@ -1,12 +1,46 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
 import Script from "next/script"
 
 export function Reviews() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const [shouldLoadWidget, setShouldLoadWidget] = useState(false)
+
+  useEffect(() => {
+    const target = sectionRef.current
+    if (!target || shouldLoadWidget) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries
+        if (entry?.isIntersecting) {
+          setShouldLoadWidget(true)
+          observer.disconnect()
+        }
+      },
+      {
+        root: null,
+        rootMargin: "200px",
+        threshold: 0,
+      }
+    )
+
+    observer.observe(target)
+
+    return () => observer.disconnect()
+  }, [shouldLoadWidget])
+
   return (
-    <section id="avaliacoes" aria-labelledby="avaliacoes-title" className="bg-secondary/50 py-14 sm:py-20 lg:py-28">
-      <Script
-        src="https://elfsightcdn.com/platform.js"
-        strategy="lazyOnload"
-      />
+    <section
+      ref={sectionRef}
+      id="avaliacoes"
+      aria-labelledby="avaliacoes-title"
+      className="bg-secondary/50 py-14 sm:py-20 lg:py-28"
+    >
+      {shouldLoadWidget ? (
+        <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+      ) : null}
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -24,9 +58,22 @@ export function Reviews() {
 
         <div className="mt-16">
           <div
-            className="elfsight-app-d825703c-6138-4f48-8212-cd71c15590fb"
-            data-elfsight-app-lazy
-          />
+            className={`relative min-h-25 overflow-hidden rounded-2xl ${
+              shouldLoadWidget ? "bg-transparent" : "bg-muted/40"
+            }`}
+            aria-busy={!shouldLoadWidget}
+          >
+            {!shouldLoadWidget ? (
+              <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-muted/30 via-muted/60 to-muted/30" />
+            ) : null}
+
+            {shouldLoadWidget ? (
+              <div
+                className="elfsight-app-d825703c-6138-4f48-8212-cd71c15590fb"
+                data-elfsight-app-lazy
+              />
+            ) : null}
+          </div>
         </div>
       </div>
     </section>
