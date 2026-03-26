@@ -207,7 +207,7 @@ export function Gallery() {
             className="mt-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           >
             <a
-              href="https://wa.me/5551992667440"
+              href="https://wa.me/5551992667440?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
               target="_blank"
               rel="noopener noreferrer"
             >
