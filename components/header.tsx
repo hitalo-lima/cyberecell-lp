@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { WHATSAPP_QUOTE_URL } from "@/lib/whatsapp"
 
 const navLinks = [
   { href: "#servicos", label: "Serviços" },
@@ -52,7 +53,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="https://wa.me/5551992667440?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21" target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_QUOTE_URL} target="_blank" rel="noopener noreferrer">
                 Contato
               </a>
             </Button>
@@ -87,7 +88,7 @@ export function Header() {
                 </a>
               ))}
               <Button asChild className="mt-2 w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="https://wa.me/5551992667440?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21" target="_blank" rel="noopener noreferrer">
+                <a href={WHATSAPP_QUOTE_URL} target="_blank" rel="noopener noreferrer">
                   Contato
                 </a>
               </Button>

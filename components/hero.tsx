@@ -1,5 +1,6 @@
 import { ArrowRight, Shield, Clock, Award, UserStar, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { WHATSAPP_QUOTE_URL } from "@/lib/whatsapp"
 
 const features = [
   { icon: Shield, label: "Peças de qualidade" },
@@ -95,7 +96,7 @@ export function Hero() {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 text-base px-8 animate-pulse"
             >
-              <a href="https://wa.me/5551992667440?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21" target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_QUOTE_URL} target="_blank" rel="noopener noreferrer">
                 Solicitar Orçamento via WhatsApp
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
