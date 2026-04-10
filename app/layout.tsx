@@ -36,6 +36,8 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "CyberECell",
               "description": "Assistência técnica especializada em conserto de smartphones, localizada em São Leopoldo - RS. Reparos rápidos, peças de qualidade e garantia real, com atendimento diferenciado para cuidar do seu aparelho com segurança.",
+              "image": "https://cyberecell.com.br/exterior-assistencia.webp",
+              "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Av. Theodomiro Porto da Fonseca, 191",
@@ -45,12 +47,17 @@ export default function RootLayout({
                 "addressCountry": "BR"
               },
               "telephone": "+5551992667440",
-              "url": "https://cybercell.com.br",
+              "url": "https://cyberecell.com.br",
               "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-12:00"],
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5.0",
                 "reviewCount": "200"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -29.770668149381304,
+                "longitude": -51.14860853376678
               }
             })
           }}
