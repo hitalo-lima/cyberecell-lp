@@ -52,7 +52,7 @@ export function Reviews() {
             O Que Nossos Clientes Dizem
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Já são <strong className="text-primary">mais de 180 avaliações 5 estrelas no Google</strong>. Excelência reconhecida por nossos clientes.
+            Já são <strong className="text-primary">mais de 200 avaliações 5 estrelas no Google</strong>. Excelência reconhecida por nossos clientes.
           </p>
         </header>
 
