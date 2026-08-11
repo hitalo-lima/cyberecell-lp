@@ -28,6 +28,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="preconnect" href="https://elfsightcdn.com" />
+        <link rel="dns-prefetch" href="https://elfsightcdn.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -38,9 +38,7 @@ export function Reviews() {
       aria-labelledby="avaliacoes-title"
       className="bg-secondary/50 py-14 sm:py-20 lg:py-28"
     >
-      {shouldLoadWidget ? (
-        <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
-      ) : null}
+      <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -68,10 +66,7 @@ export function Reviews() {
             ) : null}
 
             {shouldLoadWidget ? (
-              <div
-                className="elfsight-app-d825703c-6138-4f48-8212-cd71c15590fb"
-                data-elfsight-app-lazy
-              />
+              <div className="elfsight-app-d825703c-6138-4f48-8212-cd71c15590fb" />
             ) : null}
           </div>
         </div>
