@@ -7,7 +7,8 @@ import { WHATSAPP_QUOTE_URL } from "@/lib/whatsapp"
 
 const navLinks = [
   { href: "#servicos", label: "Serviços" },
-  { href: "#avaliacoes", label: "Avaliações"},
+  { href: "#avaliacoes", label: "Avaliações" },
+  { href: "#localizacao", label: "Localização" },
 ]
 
 export function Header() {

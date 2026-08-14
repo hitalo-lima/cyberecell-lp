@@ -50,7 +50,7 @@ const otherServices = [
 
 export function AnotherServices() {
   return (
-    <section id="demais-servicos" aria-labelledby="demais-servicos-title" className="bg-background py-14 sm:py-20">
+    <section id="demais-servicos" aria-labelledby="demais-servicos-title" className="bg-background py-12 sm:py-16 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="mx-auto max-w-3xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">

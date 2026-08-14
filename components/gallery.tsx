@@ -97,7 +97,7 @@ export function Gallery() {
   }
 
   return (
-    <section id="galeria" aria-labelledby="galeria-title" className="bg-background py-14 sm:py-20 lg:py-28">
+    <section id="galeria" aria-labelledby="galeria-title" className="bg-background py-12 sm:py-16 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <header className="mx-auto max-w-2xl text-center">

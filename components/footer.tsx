@@ -1,14 +1,8 @@
-import { MapPin, Clock, Phone } from "lucide-react"
+import { Clock, Phone } from "lucide-react"
 import { FacebookIcon } from "./icons/facebook-icon"
 import { InstagramIcon } from "./icons/instagram-icon"
 
 const contactInfo = [
-  {
-    icon: MapPin,
-    label: "Localização",
-    value: "São Leopoldo - RS",
-    detail: "Av. Theodomiro Porto da Fonseca, 191 - Centro, 93010-305",
-  },
   {
     icon: Clock,
     label: "Horário",

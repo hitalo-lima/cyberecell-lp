@@ -36,7 +36,7 @@ export function Reviews() {
       ref={sectionRef}
       id="avaliacoes"
       aria-labelledby="avaliacoes-title"
-      className="bg-secondary/50 py-14 sm:py-20 lg:py-28"
+      className="bg-secondary/50 py-12 sm:py-16 lg:py-16"
     >
       <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
 
@@ -62,7 +62,7 @@ export function Reviews() {
             aria-busy={!shouldLoadWidget}
           >
             {!shouldLoadWidget ? (
-              <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-muted/30 via-muted/60 to-muted/30" />
+              <div className="absolute inset-0 animate-pulse bg-linear-to-r from-muted/30 via-muted/60 to-muted/30" />
             ) : null}
 
             {shouldLoadWidget ? (

@@ -34,7 +34,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" aria-labelledby="servicos-title" className="bg-secondary/50 py-14 sm:py-20">
+    <section id="servicos" aria-labelledby="servicos-title" className="bg-secondary/50 py-12 sm:py-16 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <header className="mx-auto max-w-2xl text-center">

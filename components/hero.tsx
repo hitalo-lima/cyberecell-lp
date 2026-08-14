@@ -51,7 +51,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative overflow-hidden bg-background -mt-16 lg:-mt-20 pt-28 pb-14 sm:pt-32 lg:pt-40 lg:pb-24"
+      className="relative overflow-hidden bg-background -mt-16 lg:-mt-20 pt-28 pb-14 sm:pt-32"
     >
       {/* Circuit board SVG background */}
       <CircuitPattern />
