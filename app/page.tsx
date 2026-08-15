@@ -17,7 +17,7 @@ export default function HomePage() {
       <Reviews />
       <Gallery />
 
-      <section id="localizacao" className="bg-muted/40 py-12 sm:py-16 lg:py-16">
+      <section id="localizacao" className="bg-secondary/50 py-12 sm:py-16 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex flex-col gap-3 text-center sm:text-left">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Localização</p>

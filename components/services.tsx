@@ -41,7 +41,7 @@ export function Services() {
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">
             Nossos Serviços
           </span>
-          <h2 id="servicos-title" className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+          <h2 id="servicos-title" className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
             Assistência técnica especializada
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-pretty">
@@ -70,8 +70,8 @@ export function Services() {
               <CardContent>
                 <ul className="space-y-2">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-primary">
-                      <ArrowRight className="h-3 w-3 " />
+                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <ArrowRight className="h-3 w-3 shrink-0 text-primary" />
                       {feature}
                     </li>
                   ))}

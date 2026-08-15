@@ -94,7 +94,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 text-base px-8 animate-pulse"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 text-base px-8"
             >
               <a href={WHATSAPP_QUOTE_URL} target="_blank" rel="noopener noreferrer">
                 Solicitar Orçamento via WhatsApp

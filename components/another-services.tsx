@@ -56,7 +56,7 @@ export function AnotherServices() {
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">
             Demais Serviços
           </span>
-          <h2 id="demais-servicos-title" className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+          <h2 id="demais-servicos-title" className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
             Soluções extras para manter seu smartphone completo
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
@@ -69,7 +69,7 @@ export function AnotherServices() {
           {otherServices.map((service) => (
             <div
               key={service.title}
-              className="group flex gap-4 rounded-xl  p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-sm"
+              className="group flex gap-4 rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-sm"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <service.icon className="h-5 w-5 text-primary" />
