@@ -50,7 +50,7 @@ export default function RootLayout({
               },
               "telephone": "+5551992667440",
               "url": "https://cyberecell.com.br",
-              "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-12:00"],
+              "openingHours": ["Mo-Fr 09:00-18:00"],
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5.0",
