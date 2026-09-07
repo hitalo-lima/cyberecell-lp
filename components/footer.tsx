@@ -7,7 +7,6 @@ const contactInfo = [
     icon: Clock,
     label: "Horário",
     value: "Seg - Sex: 9h às 18h",
-    detail: "Sáb: 9h às 12h",
   },
   {
     icon: Phone,
@@ -63,7 +62,7 @@ export function Footer() {
                       {info.label}
                     </span>
                     <p className="mt-1 font-semibold text-background">{info.value}</p>
-                    <p className="text-sm text-background/70">{info.detail}</p>
+                    {info.detail && <p className="text-sm text-background/70">{info.detail}</p>}
                   </div>
                 </address>
               ))}
